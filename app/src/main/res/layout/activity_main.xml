@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="274dp"
+        android:layout_height="274dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.089"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/txtViewMain"
+        android:layout_width="278dp"
+        android:layout_height="35dp"
+        android:text="القرآن الكريم"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.046" />
+
+    <Button
+        android:id="@+id/btnReadSurah"
+        android:layout_width="116dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#CAAC71"
+        android:text="Read Surah"
+        app:layout_constraintBottom_toTopOf="@+id/btnAllSurah"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnReadParah"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewMain" />
+
+    <Button
+        android:id="@+id/btnReadQuran"
+        android:layout_width="114dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="#CAAC71"
+        android:text="Quran"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnReadParah" />
+
+    <Button
+        android:id="@+id/btnReadParah"
+        android:layout_width="115dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#CAAC71"
+        android:text="Read Parah"
+        app:layout_constraintBottom_toTopOf="@+id/btnReadQuran"
+        app:layout_constraintEnd_toStartOf="@+id/btnReadSurah"
+        app:layout_constraintHorizontal_bias="0.607"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewMain" />
+
+    <Button
+        android:id="@+id/btnAllSurah"
+        android:layout_width="110dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#CAAC71"
+        android:text="All Surah"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.455"
+        app:layout_constraintStart_toEndOf="@+id/btnReadQuran"
+        app:layout_constraintTop_toBottomOf="@+id/btnReadSurah" />
+
+    <TextView
+        android:id="@+id/txtViewFooter"
+        android:layout_width="215dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="44dp"
+        android:text="BITF19M022"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
