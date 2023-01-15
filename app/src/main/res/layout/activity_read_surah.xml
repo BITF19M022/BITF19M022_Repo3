@@ -50,7 +50,7 @@
         android:layout_marginStart="28dp"
         android:text="Enter Surah Number"
         android:textAlignment="center"
-        android:textColor="#000000"
+        android:textColor="#CAAC71"
         android:textSize="14sp"
         app:layout_constraintBottom_toTopOf="@+id/editTextSurahNumber"
         app:layout_constraintStart_toStartOf="parent"

@@ -20,7 +20,6 @@ public class ReadParah extends AppCompatActivity {
         Button buttonGo = findViewById(R.id.btnReadSurahByNo);
         TextView textView = findViewById(R.id.txtViewQuran);
 
-
         QuranArabicText Quran = new QuranArabicText();
         QDH allData = new QDH();
 
